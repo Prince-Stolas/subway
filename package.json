@@ -1,0 +1,13 @@
+{
+  "name": "subway-surfer-overlay",
+  "version": "1.0.0",
+  "description": "An always-on-top resizable window for viewing Subway Surfers gameplay from the internet.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^38.2.0"
+  }
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; frame-src https://www.youtube.com https://www.youtube-nocookie.com; style-src 'self'; script-src 'self';"
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Subway Surfers gameplay</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="player-shell">
+      <iframe
+        id="player"
+        title="Subway Surfers gameplay from YouTube"
+        src="https://www.youtube.com/embed/hJcv2nZ8x84?autoplay=1&mute=1&controls=0&disablekb=1&loop=1&playlist=hJcv2nZ8x84&rel=0&origin=http%3A%2F%2F127.0.0.1"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </main>
+    <aside id="settings" class="settings" hidden aria-label="Settings">
+      <div class="settings-card">
+        <div class="settings-header">
+          <h1>Settings</h1>
+          <button id="close-settings" class="icon-button" type="button" aria-label="Close settings">×</button>
+        </div>
+        <label class="field">
+          <span>Video URL</span>
+          <input id="video-url" type="url" spellcheck="false">
+        </label>
+        <button id="apply-video" class="primary" type="button">Load video</button>
+        <p id="url-error" class="error" hidden>Enter a valid YouTube video URL.</p>
+        <label class="check-row">
+          <input id="always-on-top" type="checkbox" checked>
+          <span>Always on top</span>
+        </label>
+        <label class="field">
+          <span>Window opacity: <output id="opacity-value">100%</output></span>
+          <input id="opacity" type="range" min="20" max="100" value="100">
+        </label>
+        <p class="note">
+          Open settings with <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>.
+        </p>
+      </div>
+    </aside>
+    <script src="renderer.js"></script>
+  </body>
+</html>

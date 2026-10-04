@@ -1,0 +1,148 @@
+:root {
+  color-scheme: dark;
+  background: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.player-shell,
+iframe {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+html,
+body {
+  background: transparent;
+  overflow: hidden;
+}
+
+body {
+  -webkit-app-region: drag;
+}
+
+.player-shell {
+  background: transparent;
+  overflow: hidden;
+}
+
+iframe {
+  -webkit-app-region: drag;
+  border: 0;
+  display: block;
+}
+
+.settings {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.62);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: fixed;
+  -webkit-app-region: no-drag;
+}
+
+.settings[hidden] {
+  display: none;
+}
+
+.settings-card {
+  background: #181b22;
+  border: 1px solid #414957;
+  border-radius: 10px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
+  color: #f2f4f7;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: calc(100% - 28px);
+  padding: 18px;
+  width: 350px;
+}
+
+.settings-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.icon-button {
+  background: transparent;
+  border: 0;
+  color: #c5ccd8;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+  padding: 0 3px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  gap: 7px;
+}
+
+.field input[type="url"] {
+  background: #0e1014;
+  border: 1px solid #3c4452;
+  border-radius: 5px;
+  color: inherit;
+  padding: 8px;
+}
+
+.field input[type="range"] {
+  accent-color: #67a2ff;
+  width: 100%;
+}
+
+.check-row {
+  align-items: center;
+  display: flex;
+  font-size: 13px;
+  gap: 9px;
+}
+
+.check-row input {
+  accent-color: #67a2ff;
+}
+
+.primary {
+  background: #315d9e;
+  border: 1px solid #4d8ce6;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.error {
+  color: #ff9d9d;
+  font-size: 11px;
+  margin: -7px 0 0;
+}
+
+.note {
+  color: #9da7b6;
+  font-size: 11px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+kbd {
+  background: #292e38;
+  border: 1px solid #4b5565;
+  border-radius: 3px;
+  font-size: 10px;
+  padding: 1px 4px;
+}
